@@ -6,7 +6,10 @@
   "scripts": {
     "test": "",
     "runHeadless": "./node_modules/.bin/cypress run --headless",
-    "runHeaded": "./node_modules/.bin/cypress run --headed --browser .chrome"
+    "runHeaded": "./node_modules/.bin/cypress run --headed --browser .chrome",
+    "cypress-run": "cypress run",
+    "int-test": "start-server-and-test next apple.con cypress-run",
+    "apple": "cypress run --spec cypress/integration/apple.spec.js"
   },
   "keywords": [],
   "author": "Dmitry Shimansky",
