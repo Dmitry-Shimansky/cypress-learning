@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress/integration/apple.spec.js"
+    "test": "",
+    "runHeadless": "./node_modules/.bin/cypress run --headless",
+    "runHeaded": "./node_modules/.bin/cypress run --headed --browser .chrome"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dmitry Shimansky",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^7.2.0"
